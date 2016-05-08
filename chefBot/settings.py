@@ -10,19 +10,21 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import secrets
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@08tiku8m+^szf$xiuvu-m$2o_4-k(yqmtj08i)llyuy35w+_$'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SECRET_KEY = secrets.SECRET_KEY
+
+TEMPLATES = []
 TEMPLATE_DEBUG = True
+
 
 ALLOWED_HOSTS = []
 
